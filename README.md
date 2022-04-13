@@ -1,4 +1,4 @@
-# GSOC2021
+# GSOC2022
 
 JuMP is a modeling interface and a collection of supporting packages for mathematical optimization that is embedded in Julia. With JuMP, users formulate various classes of optimization problems with easy-to-read code, and then solve these problems using state-of-the-art open-source and commercial solvers. JuMP also makes advanced optimization techniques easily accessible from a high-level language.
 
@@ -26,12 +26,16 @@ A unmaintened package is [JuMPeR](https://github.com/IainNZ/JuMPeR.jl)
 
 #### Abstract
 
-...
+Robust optimization is...
 
+The goal of this project is...
 
 #### Technical details
 
-...
+Select method to be implmented...
+
+Extract matrix representation from MOI with MatrixOfConstraints and apply the required transformations to obtain a robust reformulation.
+A interface for handling results and uncertainties must be develops along the project.
 
 #### Helpful Experience
 
@@ -45,6 +49,7 @@ A unmaintened package is [JuMPeR](https://github.com/IainNZ/JuMPeR.jl)
 - Read the MathOptInterface manual and get familiar with the data structures used to represent scalar and vector functions
 - Read the books and papers: x, y, z
 - Read the implementation of [JuMPeR](https://github.com/IainNZ/JuMPeR.jl)
+- Read about new extensions such as [Dualization](https://github.com/JuMP-dev/Dualization.jl)
 
 **Key deliverables**
 

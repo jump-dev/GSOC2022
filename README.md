@@ -1,2 +1,110 @@
-# GSOC2022
-SOC2022 information for JuMP
+# GSOC2021
+
+JuMP is a modeling interface and a collection of supporting packages for mathematical optimization that is embedded in Julia. With JuMP, users formulate various classes of optimization problems with easy-to-read code, and then solve these problems using state-of-the-art open-source and commercial solvers. JuMP also makes advanced optimization techniques easily accessible from a high-level language.
+
+[JuMP](https://jump.dev/) will be participating as a sub-organization in [NumFOCUS](http://numfocus.org/)'s application for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). For more information about this application see:
+- [NumFOCUS's main GSoC page](https://github.com/numfocus/gsoc)
+
+## Mentors
+
+- [Oscar Dowson](https://github.com/odow)
+- [Joaquim Dias Garcia](https://github.com/joaquimg)
+- [Mario Souto](https://github.com/mariohsouto)
+
+## Ideas
+
+###  Robust Optimization in JuMP
+
+#### Abstract
+
+Robust optimization is an important subfield of optimization...
+A unmaintened package is [JuMPeR](https://github.com/IainNZ/JuMPeR.jl)
+
+| **Priority** | **Involves** | **Mentors** |
+| ------------ | ------------ | ----------- |
+|  Medium  | Creating a JuMP Extension for Robust Optimization | [Joaquim Dias Garcia](https://github.com/joaquimg), [Mario Souto](https://github.com/mariohsouto) |
+
+#### Abstract
+
+...
+
+
+#### Technical details
+
+...
+
+#### Helpful Experience
+
+- Knowledge of mathematical optimization (robust optimization)
+- Basic knowledge of MathOptInterface
+
+#### Steps
+
+**Initial steps**
+
+- Read the MathOptInterface manual and get familiar with the data structures used to represent scalar and vector functions
+- Read the books and papers: x, y, z
+- Read the implementation of [JuMPeR](https://github.com/IainNZ/JuMPeR.jl)
+
+**Key deliverables**
+
+- first
+- second
+- third
+- 
+**Stretch goals**
+
+- fourth
+
+###  Chordal decomposition of SDP
+
+#### Abstract
+
+Chordal decomposition is a key step in the formulation of sparse SDP.
+Implementations are already available
+in [SumOfSquares](https://github.com/jump-dev/SumOfSquares.jl/)
+and [COSMO](https://github.com/oxfordcontrol/COSMO.jl).
+
+| **Priority** | **Involves** | **Mentors** |
+| ------------ | ------------ | ----------- |
+|  Medium  | Creating Chordal extension and decomposition packages | [Joaquim Dias Garcia](https://github.com/joaquimg) |
+
+#### Abstract
+
+Many semidefinite problems are sparse and exploiting this sparsity can significantly
+reduce the computation time and memory needed to solve the problem.
+
+The goal of this project is to refactor existing implementation of chordal sparsity reduction into a MathOptInterface layer that is easy to plug into any SDP solver as a transformation layer.
+
+#### Technical details
+
+Chordal decomposition and PSD matrix completion for SDPs are not currently accessible through MathOptInterface.
+The core goal of this project is to create an MOI layer for chordal decomposition and allow these capabilities to be easy options from JuMP that work with any SDP solver.
+Then, this package will be used to create sparse SDP examples for JuMP, drawing from several application areas.
+Finally, there is the possibility of working on improvements to chordal graph algorithms themselves. 
+
+#### Helpful Experience
+
+- Knowledge of mathematical optimization (semidefinite programming)
+- Knowledge of graph theory and chordal graphs (see *Chordal Graphs and Semidefinite Optimization* by Lieven Vandenberghe and Martin S. Andersen)
+- Basic knowledge of MathOptInterface
+
+#### Steps
+
+**Initial steps**
+
+- Read the MathOptInterface manual and get familiar with the data structures used to represent scalar and vector functions
+- Read [*Chordal Graphs and Semidefinite Optimization*](http://www.seas.ucla.edu/~vandenbe/publications/chordalsdp.pdf) by Lieven Vandenberghe and Martin S. Andersen and [*A Clique Graph Based Merging Strategy for Decomposable SDPs*](https://arxiv.org/pdf/1911.05615.pdf) by Michael Garstka, Mark Cannon, and Paul Goulart to familiarize yourself with the use of chordal sparsity in semidefinite programming
+- Read the implementation of algorithms on chordal graphs
+in [SumOfSquares](https://github.com/jump-dev/SumOfSquares.jl/), [COSMO](https://github.com/oxfordcontrol/COSMO.jl), and [ChordalDecomp.jl](https://github.com/tjdiamandis/ChordalDecomp.jl)
+
+**Key deliverables**
+
+- Create a ChordalOptInterface.jl package an MOI layer doing chordal sparsity decomposition
+- Allow chordal decomposition to be an easy to use option from JuMP that works with any semidefinite solver
+- Add examples that use chordal decomposition to solve large-scale sparse semidefinite programs in applications of interest
+
+**Stretch goals**
+
+- Improve algorithms for chordal decomposition in the currently-under-development [ChordalDecomp.jl](https://github.com/tjdiamandis/ChordalDecomp.jl)
+

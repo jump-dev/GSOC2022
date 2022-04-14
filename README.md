@@ -47,19 +47,19 @@ It will be necessary to extract matrix representation from MOI with MatrixOfCons
 **Initial steps**
 
 - Read the MathOptInterface manual and get familiar with the data structures used to represent scalar and vector functions
-- Read the books and papers: x, y, z
+- Read [The Price of Robustness](https://www.robustopt.com/references/Price%20of%20Robustness.pdf), [A Practical Guide to Robust Optimization](https://arxiv.org/pdf/1501.02634.pdf) as introductions to the theme and notation, it might be useful to review relevant chapters of Robust Optimization by A Ben-Tal, L El Ghaoui, A Nemirovski .
 - Read the implementation of [JuMPeR](https://github.com/IainNZ/JuMPeR.jl)
 - Read about new extensions such as [Dualization](https://github.com/JuMP-dev/Dualization.jl)
 
 **Key deliverables**
 
-- first
-- second
-- third
-- 
+- Implement the box uncertainty reformulation
+- Implement the ellipsoidal uncertainty reformulation
+- Implement the polyhedral uncertainty reformulation
+
 **Stretch goals**
 
-- fourth
+- Handle conic uncertainty
 
 ###  Chordal decomposition of SDP
 

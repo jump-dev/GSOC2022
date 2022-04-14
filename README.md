@@ -26,9 +26,9 @@ A unmaintened package is [JuMPeR](https://github.com/IainNZ/JuMPeR.jl)
 
 #### Abstract
 
-Robust optimization is...
+Robust optimization is an important subfield of optimization that addresses the challenges of having uncertainty associated with the parameters of the problem. Robust optimization is a powerful tool from decision theory that has several applications of interest such as control, power systems and finance.
 
-The goal of this project is...
+The goal of this project is to create a layer on top of JuMP to facilitate the use of robust optimization and foster the adoption of this methodology among practitioners. This new modelling layer should be user friendly and leverage the modularity of MathOptInterface.
 
 #### Technical details
 

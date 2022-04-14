@@ -32,10 +32,9 @@ The goal of this project is to create a layer on top of JuMP to facilitate the u
 
 #### Technical details
 
-Select method to be implmented...
+This project will focus on modelling tractable reformulations of uncertainty. We plan to address the following in order: box, ellipsoidal, polyhedral and conic. 
 
-Extract matrix representation from MOI with MatrixOfConstraints and apply the required transformations to obtain a robust reformulation.
-A interface for handling results and uncertainties must be develops along the project.
+It will be necessary to extract matrix representation from MOI with MatrixOfConstraints and apply the required transformations to obtain a robust reformulation. An interface for handling results and uncertainties must be developed along the project.
 
 #### Helpful Experience
 

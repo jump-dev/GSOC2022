@@ -17,8 +17,9 @@ JuMP is a modeling interface and a collection of supporting packages for mathema
 
 #### Abstract
 
-Robust optimization is an important subfield of optimization...
-A unmaintened package is [JuMPeR](https://github.com/IainNZ/JuMPeR.jl)
+Robust optimization is an important subfield of optimization.
+Latest versions of JuMP do not support such class of problems.
+A unmaintened package that works with early JuMP versions is [JuMPeR](https://github.com/IainNZ/JuMPeR.jl).
 
 | **Priority** | **Involves** | **Mentors** |
 | ------------ | ------------ | ----------- |
